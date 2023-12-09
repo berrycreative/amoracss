@@ -1,0 +1,146 @@
+/*-- BADGES -- */
+
+.amora-badge {
+	display: inline-block;
+	margin: 0.4em;
+}
+.amora-badge>span {
+	background-color: #5D5D5D;
+	color: #ffffff;
+	display: table-cell;
+	font-size: 1.9em;
+	font-weight: 400;
+	line-height: 1;
+	padding: .3em .6em;
+	text-align: center;
+	vertical-align: baseline;
+	white-space: nowrap;
+	&:first-child {
+		border-bottom-left-radius: 0.25em;
+		border-top-left-radius: .25em;
+	}
+	&:nth-child(2) {
+		border-bottom-right-radius: 0.25em;
+		border-top-right-radius: .25em;
+	}
+}  
+
+.amora-badge>span.amorabg {
+	background-color: #972F65;
+}
+
+.ghub-badge {
+	display: inline-block;
+	margin: 0.4em;
+}
+.ghub-badge>span {
+	background-color: #5D5D5D;
+	color: #ffffff;
+	display: table-cell;
+	font-size: 0.9em;
+	font-weight: 400;
+	line-height: 1;
+	padding: .3em .6em;
+	text-align: center;
+	vertical-align: baseline;
+	white-space: nowrap;
+	&:first-child {
+		border-bottom-left-radius: 0.25em;
+		border-top-left-radius: .25em;
+	}
+	&:nth-child(2) {
+		border-bottom-right-radius: 0.25em;
+		border-top-right-radius: .25em;
+	}
+}
+
+.ghub-badge>span.purple {
+	background-color: #A21CAF;
+}
+.ghub-badge>span.dpurple {
+	background-color: #86198F;
+}
+.ghub-badge>span.neonpurple {
+	background-color: #C724B1;
+}
+.ghub-badge>span.violet {
+	background-color: #8F00FF;
+}
+.ghub-badge>span.pink {
+	background-color: #ff0080;
+}
+.ghub-badge>span.lilac {
+	background-color: #AA98A9;
+}
+.ghub-badge>span.lime {
+	background-color: #04FF86;
+}
+.ghub-badge>span.chartreuse {
+	background-color: #7fff00;
+}
+.ghub-badge>span.blue {
+	background-color: #4A69BD;
+}
+.ghub-badge>span.blue2 {
+	background-color: #10A8D6;
+}
+.ghub-badge>span.neonblue {
+	background-color: #1F51FF;
+}
+.ghub-badge>span.aqua {
+	background-color: #00FFFF;
+}
+.ghub-badge>span.green {
+	background-color: #228B22;
+}
+.ghub-badge>span.dgreen {
+	background-color: #06847D;
+}
+.ghub-badge>span.green2 {
+	background-color: #4DC71F;
+}
+.ghub-badge>span.neongreen {
+	background-color: #0FFF50;
+}
+.ghub-badge>span.teal {
+	background-color: #008080;
+}
+.ghub-badge>span.mustard {
+	background-color: #D7C811;
+}
+.ghub-badge>span.yellow {
+	background-color: #FFEA00;
+}
+.ghub-badge>span.neonyellow {
+	background-color: #DFFF00;
+}
+.ghub-badge>span.orange {
+	background-color: #F28C28;
+}
+.ghub-badge>span.red {
+	background-color: #C41E3A;
+}
+.ghub-badge>span.neonred {
+	background-color: #FF3131;
+}
+.ghub-badge>span.cherry {
+	background-color: #D2042D;
+}
+.ghub-badge>span.marsala {
+	background-color: #986868;
+}
+.ghub-badge>span.wine {
+	background-color: #722F37;
+}
+.ghub-badge>span.amora {
+	background-color: #972F65;
+}
+.ghub-badge>span.black {
+	background-color: #262626;
+}
+.ghub-badge>span.gray {
+	background-color: #E6E6E6;
+}
+.ghub-badge>span.white {
+	background-color: #F1F1F1;
+}
