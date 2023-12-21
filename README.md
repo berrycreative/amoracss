@@ -21,7 +21,7 @@ How does it work?
 You can also use the icons by simply including the CDN link in the ```head``` of your page:
 
 ```html 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/quenquen/amoracss@main/amora.css"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/berrycreative/amoracss@main/amora.css"> 
 ```
 
 
