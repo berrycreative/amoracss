@@ -1265,7 +1265,7 @@ tfoot {
   color:#FFF;
   border-radius:50px;
   text-align:center;
-  font-size:32px;
+  font-size:33px;
   box-shadow: 2px 2px 3px #999;
   z-index:100;
 }
@@ -1276,6 +1276,7 @@ tfoot {
 }
 
 /*-- FAB ABOUT --*/
+
 /*- 
   Credits - Andy Tran
 -*/
@@ -1283,7 +1284,7 @@ tfoot {
 .float-about {
   z-index: 999999;
   position: fixed;
-  right: 20px;
+  right: 10px;
   bottom: 20px;
   display: flex;
   align-items: center;
