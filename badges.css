@@ -1,10 +1,10 @@
 /*-- BADGES -- */
 
-.amora-badge {
+.amoracss-badge {
 	display: inline-block;
 	margin: 0.4em;
 }
-.amora-badge>span {
+.amoracss-badge>span {
 	background-color: #5D5D5D;
 	color: #ffffff;
 	display: table-cell;
@@ -25,7 +25,7 @@
 	}
 }  
 
-.amora-badge>span.amorabg {
+.amoracss-badge>span.amorabg {
 	background-color: #972F65;
 }
 
