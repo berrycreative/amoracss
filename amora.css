@@ -2,10 +2,10 @@
   * AMORA CSS v1.0
   * Minimalist css
   * Licensed under the MIT license
-  * Copyright (c) 2023 Berry Creative
+  * Copyright (c) 2024 Berry Creative
 */
 
-@import url("https://cdn.jsdelivr.net/gh/quenquen/icobcl@main/icobcl-sn/icobcl-sn.css");
+@import url("https://cdn.jsdelivr.net/gh/berrycreative/icobcl@main/icobcl-sn/icobcl-sn.css"); /* Icons Library by ICOBCL */
 @import url("badges.css");
 @import url("social.css");
 
@@ -30,6 +30,7 @@
   --color-light: #F4F4F4;
   --color-code: #596365;
   --color-amora: #8A4D76;
+  --color-whitesmoke: #F5F5F5;
   --color-highlight: #DFFF00;
   --color-focus: #711A7F;
   --color-btn: #FFFFFF;
@@ -96,6 +97,7 @@ body.dark {
   --color-lightgray: #EAEAEA;
   --color-gray: #B3B3B3;
   --color-darkgray: #999;
+  --color-whitesmoke: #6B6B6B;
   --color-error: #DC143C;
   --color-light: #F1F1F1;
   --color-code: #E0115F;
