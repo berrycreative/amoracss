@@ -7,7 +7,6 @@
 
 @import url("https://cdn.jsdelivr.net/gh/berrycreative/icobcl@main/icobcl-sn/icobcl-sn.css"); /* Icons Library by ICOBCL */
 @import url("badges.css");
-@import url("social.css");
 
 :root {
   --color: hsl(205, 20%, 32%);
@@ -24,12 +23,16 @@
   --color-lightgray: #EAEAEA;
   --color-gray: #E5E5E5;
   --color-darkgray: #3F4144;
+  --color-alternative-gray: #d1d1d1;
   --color-error: #C41E3A;
   --color-success: #28BD14;
   --color-dark: #212529;
   --color-light: #F4F4F4;
   --color-code: #596365;
   --color-amora: #8A4D76;
+  --color-amora-alt: #972F65;
+  --color-satus: #9cff1e;
+  --color-hubb: #00ff43;
   --color-whitesmoke: #F5F5F5;
   --color-highlight: #DFFF00;
   --color-focus: #711A7F;
@@ -61,7 +64,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: .55rem;
   line-height: 1.6;
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
@@ -104,6 +107,7 @@ body.dark {
   --color-highlight: #e3bc5e;
   --color-focus: #a2ff34;
   --color-btn: #25092A;
+  --color-amora-alt: #c79ab8;
 }
       
 body {
@@ -399,26 +403,6 @@ section header {
 	  ::-webkit-scrollbar-thumb:hover {
 		background: #04FF86; 
 	  }
-
-/*-- EXTERNAL LINKS -- */
-
-a[href^="http"]:not([href*="bcl.social/amora"]):not([href*="api.whatsapp.com"]):after
-{
-  content: "";
-  width: 11px;
-  height: 11px;
-  margin-left: 4px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='gray' stroke='gray' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-}
-
-.noexternal {
-    background-image: none !important;
-    padding-left: 0 !important;
-}
 
 /*-- UTILITIES --*/
 
@@ -968,7 +952,8 @@ input, fieldset, textarea, select {
 		margin: 0;
 		padding: 0;
 		border: 0;
-		background-color: var(--bg-alternative-color);	
+		background-color: var(--bg-alternative-color);
+		color: var(--color-dargray);	
 }
 
 textarea, select, input, fieldset {
@@ -997,6 +982,34 @@ label, legend, fieldset {
   margin-bottom: .5rem;
   font-weight: 500; }
 
+ input:not([type="checkbox"], [type="radio"], [type="submit"], [type="color"], [type="button"], [type="reset"]),
+select,
+textarea,
+textarea[type="text"] {
+  font-family: inherit;
+  padding: 0.8rem 1rem;
+  font-size: 1em;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+input::-moz-placeholder {
+    color: var(--color-alternative-gray);
+  }
+  input:-moz-placeholder {
+    color: var(--color-alternative-gray);
+  }
+  *::-webkit-input-placeholder {
+    color: var(--color-alternative-gray);
+  }
+  *:-ms-input-placeholder {
+    color: var(--color-alternative-gray);
+  }
+  *:-moz-placeholder {
+    color: var(--color-alternative-gray);
+  }
+  
 /*-- CARDS --*/
 
 .card {
@@ -1144,6 +1157,10 @@ tfoot {
 }
 
 .clr-amora {
+  color: #8a4d76;
+}
+
+.clr-amora-alt {
   color: #972F65;
 }
 
@@ -1268,7 +1285,6 @@ tfoot {
   border-radius:50px;
   text-align:center;
   font-size:33px;
-  box-shadow: 2px 2px 3px #999;
   z-index:100;
 }
 
@@ -1277,11 +1293,7 @@ tfoot {
   margin-left: 3px;
 }
 
-/*-- FAB ABOUT --*/
-
-/*- 
-  Credits - Andy Tran
--*/
+/*-- FAB ABOUT | Credits - Andy Tran --*/
 
 .float-about {
   z-index: 999999;
@@ -1554,4 +1566,33 @@ var {
 
 del {
   color: var(--color-error);
+}
+
+/** BADGE 'Made with Amora' **/
+
+a.amora-badge {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    top: auto;
+    left: 10px;
+    bottom: 10px;
+    right: auto;
+    color: var(--color-darksgray);
+    font-weight: 500;
+    background-color: var(--color-whitesmoke);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: .95rem;
+    text-decoration: none !important;
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.madewith {
+   color: var(--color-amora-alt);
+   font-weight: 800;
 }
