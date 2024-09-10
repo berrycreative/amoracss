@@ -1,5 +1,5 @@
 /*!
-  * AMORA CSS v1.0
+  * AMORA CSS Beta
   * Minimalist css
   * Licensed under the MIT license
   * Copyright (c) 2024 Berry Creative
@@ -7,6 +7,7 @@
 
 @import url("https://cdn.jsdelivr.net/gh/berrycreative/icobcl@main/icobcl-sn/icobcl-sn.css"); /* Icons Library by ICOBCL */
 @import url("badges.css");
+@import url("tooltip.css");
 
 :root {
   --color: hsl(205, 20%, 32%);
@@ -701,12 +702,13 @@ svg:not(:root) {
 
 .tags {
   display: inline-block;
-  border: 1px solid var(--color-gray);
+  border-radius: var(--border-radius-lg);
   text-transform: uppercase;
   color: var(--color-tertiary);	
   padding: 0.5rem;
   line-height: 1;
   letter-spacing: 0.5px;
+  margin: .15rem;
 }
 .tags.small {
   padding: 0.4rem;
@@ -1272,6 +1274,28 @@ tfoot {
   border-top-right-radius: 0;
 } 
 
+.gtag {
+  display: inline-block;
+  border: 1px solid var(--color-gray);
+  border-radius: var(--border-radius-lg);
+  text-transform: uppercase;
+  color: var(--color-tertiary);	
+  padding: 0.2rem;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+.gtag.small {
+  padding: 0.4rem;
+  font-size: 0.75em;
+}
+.gtag.large {
+  padding: 0.7rem;
+  font-size: 1.125em;
+}
+.gtag + .gtag {
+  margin-left: 1rem;
+}
+
 /*-- FAB ZAP --*/
 
 .float-zap {
@@ -1281,7 +1305,7 @@ tfoot {
   bottom:20px;
   right:20px;
   background-color:#25d366;
-  color:#FFF;
+  color: var(--color-whitesmoke);
   border-radius:50px;
   text-align:center;
   font-size:33px;
@@ -1350,7 +1374,7 @@ tfoot {
 }
 
 .float-about__meta {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-family-sans);
   opacity: 0;
   transition: 0.2s ease;
 }
@@ -1363,13 +1387,13 @@ tfoot {
 
 .float-about__meta h2 {
   color: var(--color-darkgray);
-  font-size: 14px;
+  font-size: 1.50rem;
   font-weight: 600;
 }
 
 .float-about__meta p {
   color: var(--color-darkgray);
-  font-size: 12px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -1380,7 +1404,7 @@ tfoot {
 }
 
 .float-about__meta a:hover {
-  color: var(--color-realce);
+  color: var(--color-primary);
 }
 
 /*-- GALLERY --*/
